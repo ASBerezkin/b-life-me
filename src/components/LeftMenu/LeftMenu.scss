@@ -1,0 +1,64 @@
+.menu {
+  background-color: #fff;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px;
+  &__logo {
+    width: auto;
+    height: 32px;
+  }
+  &__close {
+    padding: 16px;
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  }
+  &__list {
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    height: 100%;
+    width: 90%;
+    right: 0;
+    top: 0;
+    box-shadow: -4px 0px 12px 4px rgba(0, 0, 0, 0.05);
+    @media (min-width: 768px) {
+      width: 35%;
+    }
+  }
+  &__list-items {
+    margin: 23px 0 0 0;
+    padding: 0 8px;
+  }
+  &__item {
+    list-style: none;
+    display: flex;
+    color: rgba(0, 0, 0, 0.64);
+    transition: all .3s linear;
+    &:hover {
+      background-color: #FBFBFB;
+      color: #006BE8;
+    }
+    &_active {
+      background-color: #FBFBFB;
+      color: #006BE8;
+    }
+  }
+  &__link {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: inherit;
+    padding: 20px 0 20px 32px;
+    display: inline-block;
+    width: 100%;
+    text-decoration: none;
+  }
+}
