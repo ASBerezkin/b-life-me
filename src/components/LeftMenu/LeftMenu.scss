@@ -22,11 +22,20 @@
     position: absolute;
     height: 100%;
     width: 90%;
-    right: 0;
+    right: -90%;
     top: 0;
     box-shadow: -4px 0px 12px 4px rgba(0, 0, 0, 0.05);
+    transition: right 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     @media (min-width: 768px) {
       width: 35%;
+      right: -35%;
+    }
+    @media (min-width: 1440px) {
+      width: 20%;
+      right: -20%;
+    }
+    &_show {
+      right: 0;
     }
   }
   &__list-items {

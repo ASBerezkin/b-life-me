@@ -1,24 +1,32 @@
 import React from 'react';
 import LeftMenu from "./components/LeftMenu/LeftMenu";
 
-const menuItems = {
-    1: {
+let menuItems = [
+    {
+        id: 'main',
         href: '#',
-        name: 'Главная страница'
+        name: 'Главная страница',
+        active: false,
     },
-    2: {
+    {
+        id: 'projects',
         href: '#',
-        name: 'Проекты'
+        name: 'Проекты',
+        active: false,
     },
-    3: {
+    {
+        id: 'resume',
         href: '#',
-        name: 'Резюме'
+        name: 'Резюме',
+        active: false,
     },
-    4: {
+    {
+        id: 'contacts',
         href: '#',
-        name: 'Контакты'
+        name: 'Контакты',
+        active: false,
     },
-};
+];
 
 function App() {
   return (
