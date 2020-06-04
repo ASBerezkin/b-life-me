@@ -5,15 +5,26 @@
   justify-content: space-between;
   align-items: center;
   padding: 8px 16px;
+  @media (min-width: 1024px) {
+    padding: 0;
+  }
   &__logo {
     width: auto;
     height: 32px;
+    @media (min-width: 1024px) {
+      position: absolute;
+      z-index: 2;
+      left: 16px;
+    }
   }
   &__close {
     padding: 16px;
     display: flex;
     justify-content: flex-end;
     border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    @media (min-width: 1024px) {
+      display: none;
+    }
   }
   &__list {
     background-color: #fff;
@@ -30,9 +41,10 @@
       width: 35%;
       right: -35%;
     }
-    @media (min-width: 1440px) {
-      width: 20%;
-      right: -20%;
+    @media (min-width: 1024px) {
+      width: 100%;
+      position: relative;
+      right: 0;
     }
     &_show {
       right: 0;
@@ -41,19 +53,24 @@
   &__list-items {
     margin: 23px 0 0 0;
     padding: 0 8px;
+    @media (min-width: 1024px) {
+      display: flex;
+      margin: 0;
+      padding: 0 0 0 64px;
+    }
   }
   &__item {
     list-style: none;
     display: flex;
     color: rgba(0, 0, 0, 0.64);
-    transition: all .3s linear;
+    transition: all 0.3s linear;
     &:hover {
-      background-color: #FBFBFB;
-      color: #006BE8;
+      background-color: #fbfbfb;
+      color: #006be8;
     }
     &_active {
-      background-color: #FBFBFB;
-      color: #006BE8;
+      background-color: #fbfbfb;
+      color: #006be8;
     }
   }
   &__link {
@@ -69,5 +86,13 @@
     display: inline-block;
     width: 100%;
     text-decoration: none;
+    @media (min-width: 1024px) {
+      padding: 20px 24px;
+    }
+    &-ico {
+      @media (min-width: 1024px) {
+        display: none;
+      }
+    }
   }
 }

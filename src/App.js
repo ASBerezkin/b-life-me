@@ -1,37 +1,14 @@
 import React from 'react';
-import LeftMenu from "./components/LeftMenu/LeftMenu";
-
-let menuItems = [
-    {
-        id: 'main',
-        href: '#',
-        name: 'Главная страница',
-        active: false,
-    },
-    {
-        id: 'projects',
-        href: '#',
-        name: 'Проекты',
-        active: false,
-    },
-    {
-        id: 'resume',
-        href: '#',
-        name: 'Резюме',
-        active: false,
-    },
-    {
-        id: 'contacts',
-        href: '#',
-        name: 'Контакты',
-        active: false,
-    },
-];
+import LeftMenu from './components/LeftMenu/LeftMenu';
+import Banner from './components/Banner/Banner';
+// import GridContainer from "./components/GridContainer/GridContainer";
+import { data } from './data';
 
 function App() {
   return (
     <div className="App">
-      <LeftMenu menuList={ menuItems } />
+      <LeftMenu menuList={data.menuItems} />
+      <Banner title={data.banner.title} subtitle={data.banner.subtitle} />
     </div>
   );
 }
