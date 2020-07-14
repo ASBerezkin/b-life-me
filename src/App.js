@@ -1,7 +1,6 @@
 import React from 'react';
 import LeftMenu from './components/LeftMenu/LeftMenu';
 import Banner from './components/Banner/Banner';
-// import GridContainer from "./components/GridContainer/GridContainer";
 import { data } from './data';
 import Tabs from "./components/Tabs/Tabs";
 
