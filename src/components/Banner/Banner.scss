@@ -1,9 +1,17 @@
 .banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-image: url('./bg.svg');
   background-repeat: no-repeat;
   background-size: cover;
   padding: 36px 24px;
   text-align: center;
+  min-height: 200px;
+  @media (min-width: 1024px) {
+    min-height: 400px;
+  }
   &__title {
     font-family: Roboto, sans-serif;
     font-style: normal;
@@ -15,6 +23,10 @@
     font-variant: small-caps;
     color: #fff;
     margin: 0;
+    @media (min-width: 1024px) {
+      font-size: 52px;
+      line-height: 48px;
+    }
   }
   &__subtitle {
     font-family: Roboto, sans-serif;
@@ -27,5 +39,9 @@
     font-variant: small-caps;
     color: #fff;
     margin: 16px 0 0 0;
+    @media (min-width: 1024px) {
+      font-size: 32px;
+      line-height: 24px;
+    }
   }
 }

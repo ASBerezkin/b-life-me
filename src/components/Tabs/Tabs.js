@@ -1,10 +1,8 @@
 import React, { useState } from 'react';
 import Tab from './Tab';
 import TabPanel from './TabPanel';
-import parse from 'html-react-parser';
 import GridContainer from '../GridContainer/GridContainer';
 import logo from './icon-tabs.svg'
-import './Tabs.scss';
 
 const Tabs = ({ tabElements, tabPanelElements }) => {
   const [active, setActive] = useState('tab_1');
@@ -20,7 +18,7 @@ const Tabs = ({ tabElements, tabPanelElements }) => {
         <div className="tabs__container">
           {tabPanelElements.map(el => (
             <TabPanel isActive={el.id === active} key={`tabpanel_${el.id}`}>
-              {parse(el.content)}
+              {el.content}
             </TabPanel>
           ))}
         </div>

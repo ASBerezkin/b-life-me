@@ -1,8 +1,8 @@
 import React from 'react';
 import './GridContainer.scss';
 
-const GridContainer = ({ children }) => {
-  return <div className="grid-container">{children}</div>;
+const GridContainer = ({ classes = '', children }) => {
+  return <div className={`grid-container ${classes}`}>{children}</div>;
 };
 
 export default GridContainer;
