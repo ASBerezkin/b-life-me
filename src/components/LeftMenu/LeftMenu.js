@@ -1,6 +1,5 @@
 import React, {useState} from "react"
 import MenuItem from "./MenuItem/MenuItem";
-import './LeftMenu.scss'
 import icoMenu from './menu_open_btn.svg'
 import logo from './react-logo.svg'
 import close from './menu-close-btn.svg'
