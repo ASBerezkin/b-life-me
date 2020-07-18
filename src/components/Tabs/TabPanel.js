@@ -1,7 +1,12 @@
 import React from 'react';
+import { Transition } from 'react-transition-group';
 
 const TabPanel = ({ children, isActive }) => {
-  return <div className={isActive ? "tabs__content" : "tabs__content hide"}>{children}</div>
+  return (
+    <Transition in={isActive}>
+      {state => <div className={`tabs__content-${state}`}>{children}</div>}
+    </Transition>
+  );
 };
 
 export default TabPanel;
