@@ -1,26 +1,14 @@
 export const data = {
   menuItems: [
     {
-      id: 'main',
-      href: '#',
-      name: 'Главная страница',
-      active: false,
-    },
-    {
-      id: 'projects',
-      href: '#',
-      name: 'Проекты',
-      active: false,
-    },
-    {
       id: 'resume',
-      href: '#',
+      href: '#resume',
       name: 'Резюме',
       active: false,
     },
     {
       id: 'contacts',
-      href: '#',
+      href: '#contacts',
       name: 'Контакты',
       active: false,
     },
@@ -30,8 +18,8 @@ export const data = {
     subtitle: 'Frontend-разработчик',
   },
   tabs: [
-    {id: 'tab_1', name: 'Резюме. Как на hh.ru'},
-    {id: 'tab_2', name: 'Портфолио. Накидать работы?'},
-    {id: 'tab_3', name: 'Контакты. Тут будет форма'},
+    {id: 'tab_1', name: 'О себе. Краткая информация'},
+    {id: 'tab_2', name: 'Последние достижения'},
+    /*{id: 'tab_3', name: ''},*/
   ],
 };

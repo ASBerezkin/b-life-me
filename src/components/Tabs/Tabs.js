@@ -14,7 +14,7 @@ const Tabs = ({ tabElements, tabPanelElements }) => {
     <div className="tabs">
       <GridContainer>
         <ul className="tabs-items">
-            <li className="tabs__header"><img className="tabs__logo" src={logo} alt="Навигация"/>Навигация</li>
+            <li className="tabs__header"><img className="tabs__logo" src={logo} alt="Резюме"/>Резюме</li>
           {tabElements.map(el => (
             <Tab name={el.name} isActive={el.id === active} key={`tabs_${el.id}`} onClick={(e) => handleClick(e, el)} />
           ))}
