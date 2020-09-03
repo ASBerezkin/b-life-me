@@ -4,6 +4,7 @@ const InputWrapper = styled('div')`
   position: relative;
   display: flex;
   flex-direction: column;
+  margin-top: 16px;
   & input {
     font-family: Roboto, sans-serif;
     font-style: normal;

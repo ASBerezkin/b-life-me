@@ -11,7 +11,7 @@ const Title = styled.div`
   letter-spacing: 0.16em;
   text-transform: ${({uppercase}) => uppercase ? 'uppercase' : null };
   font-variant: small-caps;
-  color: #ffffff;
+  color: ${({ color }) => color};
   @media (min-width: 1024px) {
     font-size: 64px;
     line-height: 56px;
